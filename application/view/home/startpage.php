@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Simple Sidebar - Start Bootstrap Template</title>
-</head>
-
 <body>
 
 <div id="wrapper">
