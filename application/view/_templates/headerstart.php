@@ -12,5 +12,6 @@
 
     <!-- CSS -->
     <link href="<?php echo URL; ?>css/style.css" rel="stylesheet">
+    <link href="<?php echo URL; ?>css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
