@@ -28,7 +28,7 @@ class HomeController
 
     }
 
-    public function doLogin() {
+    public function dologin() {
         //die("HomeController.doLogin()");
         if ($_POST['username'] == '' || $_POST['password'] == '') {
             die("Some fields has been left empty");
