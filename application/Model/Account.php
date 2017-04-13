@@ -27,7 +27,7 @@ class Account extends Model
         // Check if the user already exists
         $count = $query->rowCount();
         if ($count == 0) {
-<<<<<<< HEAD
+<<<<<< HEAD
             echo "Nothing has been found";
             $user = new Account();
             $user->registerUser($username, $password, $role);
