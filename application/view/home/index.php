@@ -10,8 +10,6 @@
         <label> password: </label> <br>
         <input type="password" name="password"> <br> <br>
         <input type="hidden" name="role" value="member">
-        <label> email: </label> <br>
-        <input type="text" name="email"> <br> <br>
         <input type="submit" name="submit" value="submit"><br><br>
         <a href="#"> Forgot password ?</a><br>
     </form>
