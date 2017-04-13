@@ -18,11 +18,9 @@
     <!-- navigation -->
     <ul class="menu">
         <li class="link"><a class="alink" href="<?php echo URL; ?>home/startpage">home</a></li>
-        <li class="link"  id='dropbtn'><a class="alink" href="<?php echo URL; ?>about/index">About</a>
+        <li class="link"  id='dropbtn'><a class="alink" href="<?php echo URL; ?>about/index">Database</a>
             <div class="dropdown">
-                <a class="alink" href="#">Projects</a>
-                <a class='alink' href="#">The members</a>
-                <a class='alink' href="#">How we started</a>
+                <a class="alink" href="#">RAM</a>
+                <a class="alink" href="#">Video Card</a>
         </li>
-        <li class="link"><a class="alink" href="#">Contact</a></li>
     </ul>
