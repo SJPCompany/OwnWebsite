@@ -53,6 +53,7 @@ class HomeController
     {
         // load views
         require APP . 'view/_templates/header.php';
+        require APP . 'view/_templates/side_menu.php';
         require APP . 'view/home/startpage.php';
         require APP . 'view/_templates/footer.php';
     }

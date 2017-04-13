@@ -82,6 +82,8 @@ body {
     margin: 33px;
     text-align: center;
     font-size: 11px;
+    width: 100%;
+    position: fixed;
 }
 .footer a {
     color: #454545;
@@ -103,8 +105,7 @@ input{
 
 .menu {
     list-style-type: none;
-    margin-left: 18%;
-    margin-right: 18%;
+    width:0 auto;
     padding: 0;
     overflow: hidden;
     background-color: #71A49C;

@@ -13,16 +13,7 @@
     <!-- CSS -->
     <link href="<?php echo URL; ?>css/style.css" rel="stylesheet">
     <link href="<?php echo URL; ?>css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo URL; ?>css/simple-sidebar.css">
+    <link href="<?php echo URL; ?>css/simple-sidebar.css" rel="stylesheet">
+    <script src="<?php echo URL; ?>public/js/jquery.js"></script>
 </head>
 <body>
-
-    <!-- navigation -->
-    <ul class="menu">
-        <li class="link"><a class="alink" href="<?php echo URL; ?>home/startpage">home</a></li>
-        <li class="link"  id='dropbtn'><a class="alink" href="<?php echo URL; ?>about/index">Database</a>
-            <div class="dropdown">
-                <a class="alink" href="#">RAM</a>
-                <a class="alink" href="#">Video Card</a>
-        </li>
-    </ul>
