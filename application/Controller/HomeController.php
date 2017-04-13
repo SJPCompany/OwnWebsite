@@ -30,7 +30,7 @@ class HomeController
 
     public function doLogin() {
         //die("HomeController.doLogin()");
-        if ($_POST['username'] == '' || $_POST['password'] == ''|| $_POST['email'] == '') {
+        if ($_POST['username'] == '' || $_POST['password'] == '') {
             die("Some fields has been left empty");
         }
 
@@ -40,9 +40,8 @@ class HomeController
                 $username = $_POST['username'];
                 $password = $_POST['password'];
                 $role = $_POST['role'];
-                $email = $_POST['email'];
                 $user = new Account();
-                $user->getUsers($username, $password, $role, $email);
+                $user->getUsers($username, $password, $role);
             } else {
                 die("Submit is not working sorry");
             }

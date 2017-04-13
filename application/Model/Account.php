@@ -13,7 +13,7 @@ use Mini\Core\Model;
 class Account extends Model
 {
     // get the user from the database
-    public function getUsers($username, $password, $role, $email)
+    public function getUsers($username, $password, $role)
     {
         $sql = "SELECT * FROM account WHERE username = :username";
         $query = $this->db->prepare($sql);
@@ -29,7 +29,7 @@ class Account extends Model
         if ($count == 0) {
             echo "Nothing has been found";
             $user = new Account();
-            $user->registerUser($username, $password, $role, $email);
+            $user->registerUser($username, $password, $role);
         } elseif ($count == 1) {
             $this->checkRole();
         } else {
@@ -39,12 +39,12 @@ class Account extends Model
     }
 
     // if the user doesn`t exist then save them to the database
-    public function registerUser($username, $password, $role, $email) {
-        $sql = "INSERT INTO account (username, password, role, email) VALUES (:username, :password, :role, :email)";
+    public function registerUser($username, $password, $role) {
+        $sql = "INSERT INTO account (username, password, role) VALUES (:username, :password, :role)";
         $query = $this->db->prepare($sql);
         // encrypt the password
         $password = password_hash($password, PASSWORD_BCRYPT);
-        $parameters = array(':username' => $username, ':password' => $password, ':role' => $role, ':email' => $email);
+        $parameters = array(':username' => $username, ':password' => $password, ':role' => $role);
 
         // useful for debugging: you can see the SQL behind above construction by using:
         // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
