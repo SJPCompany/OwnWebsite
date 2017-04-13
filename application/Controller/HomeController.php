@@ -36,7 +36,6 @@ class HomeController
 
         if(isset($_POST)) {
             if(isset($_POST['submit'])) {
-                echo "I WORK FINALY"; echo "<br />";
                 $username = $_POST['username'];
                 $password = $_POST['password'];
                 $role = $_POST['role'];
