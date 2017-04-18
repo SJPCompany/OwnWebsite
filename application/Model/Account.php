@@ -57,17 +57,19 @@ class Account extends Model
         $query = $this->db->prepare($sql);
 
         $query->execute();
-        $role = $query->fetch()->role;
+        $role = $query->fetch();
 
         // check if role exist
         if (isset($role)) {
             // if the user is Admin then start a session
-            if($role == 'Admin') {
+            if($role->role == 'Admin') {
                 $_SESSION['admin'] = true;
+                $_SESSION['username'] = $role->username;
             }
         }
         // Redirect to the startpage
         header('location: ' . URL . 'home/startpage');
+        var_dump($_SESSION);
         return $role;
     }
 }
