@@ -57,7 +57,10 @@
                     <a href="#">
                         <i class="fa fa-user-circle fa-2x"></i>
                         <span class="nav-text">
-                            Current User: <?php echo $_SESSION['username'] ?>
+                            Current User: <?php
+                            if (isset($_SESSION['username'])) {
+                                echo $_SESSION['username'];
+                            } ?>
                         </span>
                     </a>
                 </li>
