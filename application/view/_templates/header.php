@@ -15,5 +15,6 @@
     <link href="<?php echo URL; ?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo URL; ?>css/simple-sidebar.css" rel="stylesheet">
     <script src="<?php echo URL; ?>public/js/jquery.js"></script>
+    <script src="https://use.fontawesome.com/9a3a28837a.js"></script>
 </head>
 <body>
