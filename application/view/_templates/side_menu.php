@@ -1,4 +1,5 @@
-<body><div class="area"></div><nav class="main-menu">
+<body><div class="area"></div>
+    <nav class="main-menu">
             <ul>
                 <li>
                     <a href="<?php echo URL; ?>home/startpage">
@@ -46,9 +47,25 @@
                 </li>
                 <li>
                     <a href="#">
+                        <i class="fa fa-user-o fa-2x"></i>
+                        <span class="nav-text">
+                            Add User:
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
                         <i class="fa fa-user-circle fa-2x"></i>
                         <span class="nav-text">
                             Current User: <?php echo $_SESSION['username'] ?>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo URL; ?>contact/index">
+                        <i class="fa fa-question fa-2x"></i>
+                        <span class="nav-text">
+                            Contact/Problems
                         </span>
                     </a>
                 </li>
