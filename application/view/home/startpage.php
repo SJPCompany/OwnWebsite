@@ -1,5 +1,5 @@
 <div class="">
-    <p>
+    <p class="main-text">
         Welcome to the scansystem
     </p>
 </div>
