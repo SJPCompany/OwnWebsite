@@ -1,78 +1,54 @@
 <body><div class="area"></div><nav class="main-menu">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="<?php echo URL; ?>home/startpage">
                         <i class="fa fa-home fa-2x"></i>
                         <span class="nav-text">
-                            Dashboard
+                            Homepage
                         </span>
                     </a>
                   
                 </li>
                 <li class="has-subnav">
                     <a href="#">
-                        <i class="fa fa-laptop fa-2x"></i>
+                        <i class="fa fa-search fa-2x"></i>
                         <span class="nav-text">
-                            UI Components
+                            Search Part
                         </span>
                     </a>
                     
                 </li>
                 <li class="has-subnav">
                     <a href="#">
-                       <i class="fa fa-list fa-2x"></i>
+                       <i class="fa fa-shopping-basket fa-2x"></i>
                         <span class="nav-text">
-                            Forms
+                            Order Formulier
                         </span>
                     </a>
                     
                 </li>
                 <li class="has-subnav">
                     <a href="#">
-                       <i class="fa fa-folder-open fa-2x"></i>
+                       <i class="fa fa-plus fa-2x"></i>
                         <span class="nav-text">
-                            Pages
+                            Add part
                         </span>
                     </a>
                    
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-bar-chart-o fa-2x"></i>
+                        <i class="fa fa-usd fa-2x"></i>
                         <span class="nav-text">
-                            Graphs and Statistics
+                            Price Checker
                         </span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-font fa-2x"></i>
+                        <i class="fa fa-user-circle fa-2x"></i>
                         <span class="nav-text">
-                            Typography and Icons
-                        </span>
-                    </a>
-                </li>
-                <li>
-                   <a href="#">
-                       <i class="fa fa-table fa-2x"></i>
-                        <span class="nav-text">
-                            Tables
-                        </span>
-                    </a>
-                </li>
-                <li>
-                   <a href="#">
-                        <i class="fa fa-map-marker fa-2x"></i>
-                        <span class="nav-text">
-                            Maps
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                       <i class="fa fa-info fa-2x"></i>
-                        <span class="nav-text">
-                            Documentation
+                            Current User:
                         </span>
                     </a>
                 </li>
