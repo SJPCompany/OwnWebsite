@@ -12,7 +12,6 @@ session_destroy()
         <input type="text" name="username"> <br> <br>
         <label> password: </label> <br>
         <input type="password" name="password"> <br> <br>
-        <input type="hidden" name="role" value="member">
         <input type="submit" name="submit" value="login"><br><br>
         <a href="<?php echo URL; ?>reset/resetpage"> Forgot password ?</a><br>
     </form>

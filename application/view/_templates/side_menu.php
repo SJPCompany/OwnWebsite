@@ -47,7 +47,7 @@
                 </li>
                 <?php if (isset($_SESSION['admin'])) {?>
                 <li>
-                    <a href="#">
+                    <a href="<?php echo URL; ?>admin/adduser">
                         <i class="fa fa-user-o fa-2x"></i>
                         <span class="nav-text">
                             Add User:
