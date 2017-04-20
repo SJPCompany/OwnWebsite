@@ -18,6 +18,7 @@ class OrderFormController
         require APP . 'view/_templates/headerstart.php';
         require APP . 'view/orderform/index.php';
         require APP . 'view/_templates/footer.php';
+        require APP . 'view/_templates/side_menu.php';
 
     }
 
