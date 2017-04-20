@@ -1,2 +1,3 @@
 # OwnWebsite
-The website for our compnay 
+This is our first project together. 
+Making an scansystem for Mr Nuijten.
