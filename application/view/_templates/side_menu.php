@@ -11,7 +11,8 @@
                   
                 </li>
                 <li class="has-subnav">
-                    <a href="<?php echo URL; ?>search/index">
+                    <!-- Stef je had search/index staan, deze functie bestaat niet waardoor de error onstaat -->
+                    <a href="<?php echo URL; ?>search/SearchPage">
                         <i class="fa fa-search fa-2x"></i>
                         <span class="nav-text">
                             Search Part
