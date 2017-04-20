@@ -66,6 +66,8 @@ class Account extends Model
             if($role->role == 'admin' || $role->role == 'admin') {
                 $_SESSION['admin'] = true;
                 $_SESSION['username'] = $role->username;
+            } else {
+                $_SESSION['username'] = $role->username;
             }
         }
         // Redirect to the startpage
