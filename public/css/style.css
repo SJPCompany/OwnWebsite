@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     color: #454545;
+    height: 100%;
 }
 .logo {
     width: 200px;
@@ -77,17 +78,19 @@ body {
     color: #fff;
 }
 .footer {
-    border-radius: 3px;
-    padding: 20px;
+    position:fixed;
+    height:50px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
     text-align: center;
-    font-size: 11px;
-    width: 100%;
-    position: fixed;
+}
+
 }
 .footer a {
     color: #454545;
 }
-
 
 input{
     text-align: center;
@@ -142,6 +145,11 @@ input{
     text-decoration: none;
 }
 
+.dt {
+    max-width: 250px;
+    max-height: 250px;
+}
+
 .dropdown {
     display: none;
 }
@@ -161,9 +169,23 @@ input{
     width: 10%;
 }
 
+/* All the text on the frontpage */
 .main-text {
     text-align: center;
-    margin-left:  26%;
-    margin-right: 26%;
-    margin-top: 3%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto
+}
+
+/* search bar */
+.input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
 }
