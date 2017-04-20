@@ -45,6 +45,7 @@
                         </span>
                     </a>
                 </li>
+                <?php if (isset($_SESSION['admin'])) {?>
                 <li>
                     <a href="#">
                         <i class="fa fa-user-o fa-2x"></i>
@@ -53,6 +54,7 @@
                         </span>
                     </a>
                 </li>
+                <?php } ?>
                 <li>
                     <a href="#">
                         <i class="fa fa-user-circle fa-2x"></i>
@@ -76,7 +78,7 @@
 
             <ul class="logout">
                 <li>
-                   <a href="#">
+                   <a href="<?php echo URL; ?>home/index">
                          <i class="fa fa-power-off fa-2x"></i>
                         <span class="nav-text">
                             Logout

@@ -1,3 +1,6 @@
+<?php
+session_destroy()
+?>
 <div class="container">
     <img class="dv_logo" src="<?php echo URL; ?>img/davinci-logo.png">
     <br><br><br><br>
