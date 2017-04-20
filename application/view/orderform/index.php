@@ -18,16 +18,10 @@
         <input type="text" name="price"> <br> <br>
         <label> year: </label> <br>
         <input type="text" name="year"> <br> <br>
-
-
-        <div id="wrapper">
-            <input type="file">
-            <div id="drop-area">
-                <h3 class="drop-text">Drag and Drop Images Here</h3>
-            </div>
-
-        <input type="submit" name="submit" value="submit"><br><br>
-        <a href="#"> Forgot password ?</a><br>
-
     </form>
+    <div id="wrapper">
+        <input type="file">
+        <div id="drop-area">
+            <h3 class="drop-text">Drag and Drop Images Here</h3>
+        </div>
 </div>
