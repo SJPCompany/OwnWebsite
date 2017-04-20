@@ -5,6 +5,7 @@
     <title>Scansystem</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='<?php echo URL; ?>img/favicon.ico' />
 
     <!-- JS -->
     <!-- please note: The JavaScript files are loaded in the footer to speed up page construction -->
