@@ -36,9 +36,7 @@ document.addEventListener('keydown', function(e) {
 
 function activateKC() {
     document.body.style.backgroundImage = "url('../public/img/kc.png')";
-    document.getElementById('front-text').innerHTML = 'Welcome to the danksystem';
+    document.getElementById('front-text').innerHTML = '<img class="dt" src="../public/img/triangle.gif">Welcome to the danksystem<img class="dt" src="../public/img/triangle.gif">';
 
-    //alert("Hmmm, Did something change ?");
-}/**
- * Created by Gebruiker on 20-4-2017.
- */
+    alert("Congratulations you found me! You're now entering a whole other realm...");
+}

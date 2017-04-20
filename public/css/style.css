@@ -145,6 +145,11 @@ input{
     text-decoration: none;
 }
 
+.dt {
+    max-width: 250px;
+    max-height: 250px;
+}
+
 .dropdown {
     display: none;
 }
