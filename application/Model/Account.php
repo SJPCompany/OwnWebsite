@@ -29,7 +29,7 @@ class Account extends Model
         if ($count == 0) {
            die('user doesn`t exist');
         } elseif ($count == 1) {
-            $this->checkRole();
+            $this->checkRole($username);
         } else {
             echo "You already exists";
         }
@@ -52,24 +52,24 @@ class Account extends Model
     }
 
     // Check the role of the user
-    public function checkRole() {
-        $sql = "SELECT * FROM account";
+    public function checkRole($username) {
+        $sql = "SELECT * FROM account WHERE username = :username";
         $query = $this->db->prepare($sql);
+        $parameters = array(':username' => $username);
 
-        $query->execute();
+        $query->execute($parameters);
         $role = $query->fetch();
 
         // check if role exist
         if (isset($role)) {
             // if the user is Admin then start a session
-            if($role->role == 'Admin' || $role->role == 'admin') {
+            if($role->role == 'admin' || $role->role == 'admin') {
                 $_SESSION['admin'] = true;
                 $_SESSION['username'] = $role->username;
             }
         }
         // Redirect to the startpage
         header('location: ' . URL . 'home/startpage');
-        var_dump($_SESSION);
         return $role;
     }
 }
