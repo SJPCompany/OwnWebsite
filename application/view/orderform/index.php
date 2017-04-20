@@ -24,4 +24,5 @@
         <div id="drop-area">
             <h3 class="drop-text">Drag and Drop Images Here</h3>
         </div>
+    </div>
 </div>
