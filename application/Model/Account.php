@@ -63,7 +63,7 @@ class Account extends Model
         // check if role exist
         if (isset($role)) {
             // if the user is Admin then start a session
-            if($role->role == 'admin' || $role->role == 'admin') {
+            if($role->role == 'admin') {
                 $_SESSION['admin'] = true;
                 $_SESSION['username'] = $role->username;
             } else {
