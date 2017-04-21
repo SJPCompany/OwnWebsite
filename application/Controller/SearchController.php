@@ -11,8 +11,8 @@ class SearchController
     {
         // load views
         require APP . 'view/_templates/header.php';
-        require APP . 'view/_templates/side_menu.php';
         require APP . 'view/search/index.php';
+        require APP . 'view/_templates/side_menu.php';
         require APP . 'view/_templates/footer.php';
     }
 }

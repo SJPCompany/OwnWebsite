@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: justi
- * Date: 20-4-2017
- * Time: 09:24
- */
 
 namespace Mini\Controller;
 use Mini\Model\Admin;
