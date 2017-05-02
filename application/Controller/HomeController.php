@@ -15,6 +15,12 @@ use Mini\Model\Account;
 
 class HomeController
 {
+    public function CheckUSER()
+    {
+        if (!isset($_SESSION['username'])) {
+            header('location: ' . URL . 'home/index');
+        }
+    }
     /**
      * PAGE: index
      * This method handles what happens when you move to http://yourproject/home/index (which is the default page btw)
@@ -51,6 +57,7 @@ class HomeController
 
     public function StartPage()
     {
+        $this->CheckUSER();
         // load views
         require APP . 'view/_templates/header.php';
         require APP . 'view/_templates/side_menu.php';
