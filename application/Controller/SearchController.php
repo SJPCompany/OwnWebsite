@@ -6,9 +6,15 @@ use Mini\Model\Account;
 
 class SearchController
 {
-
+    public function CheckUSER()
+    {
+        if (!isset($_SESSION['username'])) {
+            header('location: ' . URL . 'home/index');
+        }
+    }
     public function SearchPage()
     {
+        $this->CheckUSER();
         // load views
         require APP . 'view/_templates/header.php';
         require APP . 'view/search/index.php';

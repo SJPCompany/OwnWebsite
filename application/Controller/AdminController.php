@@ -5,8 +5,15 @@ use Mini\Model\Admin;
 
 class AdminController
 {
+    public function CheckUSER()
+    {
+        if (!isset($_SESSION['username'])) {
+            header('location: ' . URL . 'home/index');
+        }
+    }
     public function AddUser()
     {
+        $this->CheckUSER();
         require APP . 'view/_templates/header.php';
         require APP . 'view/add/add.php';
         require APP . 'view/_templates/footer.php';
@@ -14,6 +21,7 @@ class AdminController
     }
 
     public function registerUser() {
+        $this->CheckUSER();
         if ($_POST['username'] == '' || $_POST['password'] == '' || $_POST['email'] == '') {
             die("Some fields has been left empty");
         }

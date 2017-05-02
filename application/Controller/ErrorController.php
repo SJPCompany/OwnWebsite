@@ -13,16 +13,22 @@ namespace Mini\Controller;
 
 class ErrorController
 {
+    public function CheckUSER()
+    {
+        if (!isset($_SESSION['username'])) {
+            header('location: ' . URL . 'home/index');
+        }
+    }
     /**
      * PAGE: index
      * This method handles the error page that will be shown when a page is not found
      */
     public function index()
     {
+        $this->CheckUSER();
         // load views
         require APP . 'view/_templates/header.php';
         require APP . 'view/error/index.php';
         require APP . 'view/_templates/footer.php';
     }
 }
-header('Location: application/view/home/startpage');

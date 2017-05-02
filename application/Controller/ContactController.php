@@ -12,7 +12,14 @@ use Mini\Model\Account;
 
 class ContactController
 {
+    public function CheckUSER()
+    {
+        if (!isset($_SESSION['username'])) {
+            header('location: ' . URL . 'home/index');
+        }
+    }
     public function index() {
+        $this->CheckUSER();
         require APP . 'view/_templates/header.php';
         require APP . 'view/contact/index.php';
         require APP . 'view/_templates/footer.php';

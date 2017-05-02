@@ -11,9 +11,16 @@ namespace Mini\Controller;
 
 class OrderFormController
 {
+    public function CheckUSER()
+    {
+        if (!isset($_SESSION['username'])) {
+            header('location: ' . URL . 'home/index');
+        }
+    }
 
     public function index()
     {
+        $this->CheckUSER();
         // load views
         require APP . 'view/_templates/header.php';
         require APP . 'view/orderform/index.php';
