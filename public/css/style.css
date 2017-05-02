@@ -177,3 +177,18 @@ input{
     height: 100%;
     margin: 0 auto
 }
+
+/* Everything for the changes table on the main page */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.changes {
+    max-width: 50%;
+    margin-left: 25%;
+}
