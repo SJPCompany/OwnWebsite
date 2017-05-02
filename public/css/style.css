@@ -73,6 +73,7 @@ body {
     padding: 5px 10px;
     cursor: pointer;
 }
+
 .container button:hover {
     background-color: #222;
     color: #fff;
@@ -87,7 +88,6 @@ body {
     text-align: center;
 }
 
-}
 .footer a {
     color: #454545;
 }
@@ -107,7 +107,7 @@ input{
 
 .menu {
     list-style-type: none;
-    width:0 auto;
+    width:0;
     padding: 0;
     overflow: hidden;
     background-color: #71A49C;
@@ -173,7 +173,6 @@ input{
 .main-text {
     text-align: center;
     min-height: 100%;
-    height: auto !important;
-    height: 100%;
+    height: auto!important;
     margin: 0 auto
 }

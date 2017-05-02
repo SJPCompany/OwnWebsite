@@ -13,6 +13,7 @@
 
 -- Dumpen data van tabel sjp.account: ~0 rows (ongeveer)
 /*!40000 ALTER TABLE `account` DISABLE KEYS */;
+CREATE TABLE IF NOT EXISTS `account` (
 INSERT INTO `account` (`id`, `username`, `password`, `role`, `email`) VALUES
 	(1, 'juju125', '$2y$10$j.666Bssis1YND9DIsfR8u25jzgXXtv5l1Snc8cypJqlJwlBG59mq', 'member', 'justin555@live.nl'),
 	(2, 'Administrator', 'ihebzinineenbroodje', 'admin', 'admin@admin.nl');
@@ -21,3 +22,4 @@ INSERT INTO `account` (`id`, `username`, `password`, `role`, `email`) VALUES
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+)

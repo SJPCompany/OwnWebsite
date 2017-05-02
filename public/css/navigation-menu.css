@@ -17,7 +17,7 @@
 
 
 .main-menu:hover,nav.main-menu.expanded {
-    width:200px;
+    width:240px;
     overflow:visible;
 }
 
@@ -29,7 +29,7 @@
     bottom:0;
     height:100%;
     left:0;
-    width:60px;
+    width:6%;
     overflow:hidden;
     -webkit-transition:width .05s linear;
     transition:width .05s linear;
@@ -43,6 +43,7 @@
 
 .main-menu li {
     position:relative;
+    right: 1%;
     display:block;
     width:200px;
 }
@@ -92,7 +93,6 @@
 }
 
 .no-touch .scrollable.hover:hover {
-    overflow-y:auto;
     overflow:visible;
 }
 
