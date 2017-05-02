@@ -2,7 +2,7 @@
 	<h1 id="front-text">Welcome to the scansystem</h1>
 </div>
 <div class="changes">
-    <table style="width:100%">
+    <table style="width:60%">
         <tr>
             <th>Date</th>
             <th>Version</th>
