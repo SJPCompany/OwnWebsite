@@ -55,7 +55,6 @@ body { background-color: #333 }
     trasintion: all;
     transition-duration: 0.5s;
 }
-#sidebar div:before { content: "KIJK" }
 #sidebar div span {
     margin-left: 30px;
     color: black;
