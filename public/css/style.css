@@ -188,6 +188,13 @@ th, td {
 }
 
 .changes {
-    max-width: 50%;
+    max-width: 70%;
     margin-left: 65%;
 }
+
+.right_menu {
+    position: absolute;
+    left: 70%;
+    max-width: 80%;
+}
+
