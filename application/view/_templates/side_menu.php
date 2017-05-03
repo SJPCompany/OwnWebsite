@@ -21,6 +21,7 @@
 
         <div class="fa fa-user-o fa-2x" style="color: #0f0f0f;">
             <a href="<?php echo URL; ?>admin/adduser">Add&#160;User</a>
+        </div>
 
         <div class="fa fa-question fa-2x" style="color: #0f0f0f;">
             <a href="<?php echo URL; ?>contact/index">Contact/Problems</a>
