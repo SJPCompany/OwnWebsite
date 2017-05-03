@@ -13,6 +13,6 @@ session_destroy()
         <label> password: </label> <br>
         <input type="password" name="password"> <br> <br>
         <input type="submit" name="submit" value="login"><br><br>
-        <a href="<?php echo URL; ?>reset/resetpage"> Forgot password ?</a><br>
+        <a style="color: black;" href="<?php echo URL; ?>reset/resetpage"> Forgot password ?</a><br>
     </form>
 </div>

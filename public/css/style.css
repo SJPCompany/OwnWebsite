@@ -4,79 +4,14 @@ body {
     color: #454545;
     height: 100%;
 }
-.logo {
-    width: 200px;
-    height: 200px;
-    /* this is a real image encoded via base64 text, an awesome technology! check https://varvy.com/pagespeed/base64-images.html for more info */
-    background:  url('data:image/png');
-    margin: 20px 30px;
-}
-.navigation {
-    margin-left: 33px;
-}
-.navigation a {
-    display: inline-block;
-    padding: 8px 12px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: 1px solid #454545;
-    color: #454545;
-    background: transparent;
-}
-.navigation a:hover {
-    background: #454545;
-    color: #fff;
-}
+
 .container {
+    color: black;
     padding: 20px;
     margin: 33px;
     text-align: center;
-}
-.container a {
-    color: #454545;
-}
-.container table {
-    font-size: 11px;
-    margin-top: 20px;
-}
-.container table thead td {
-    background-color: #f5f5f5;
-    padding: 4px 10px;
-}
-.container table tbody td {
-    padding: 4px 10px;
-}
-.container .box {
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-    margin-top: 30px;
-}
-.container input {
-    background-color: #f5f5f5;
-    border: 0;
-    padding: 5px 10px;
-}
-.container input[type="submit"] {
-    background-color: #ccc;
-    cursor: pointer;
-}
-.container input[type="submit"]:hover {
-    background-color: #222;
-    color: #fff;
-}
-.container button {
-    background-color: #ccc;
-    border: 0;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.container button:hover {
-    background-color: #222;
-    color: #fff;
+    background-color: white;
+    max-width: 35%;
 }
 .footer {
     position:fixed;
@@ -165,8 +100,8 @@ input{
 
 /* This is the Davinci logo in the inlog screen */
 .dv_logo{
-    height: 10%;
-    width: 10%;
+    height: 20%;
+    width: 20%;
 }
 
 /* All the text on the frontpage */
@@ -192,14 +127,12 @@ th, td {
     margin-left: 65%;
 }
 
-<<<<<<< HEAD
 .right_menu {
     position: absolute;
     left: 70%;
     max-width: 80%;
 }
 
-=======
 .select-style {
     border: 1px solid #ccc;
     width: 190px;
@@ -222,4 +155,3 @@ th, td {
 .select-style select:focus {
     outline: none;
 }
->>>>>>> 23b32da4e3f1e53145425ab63ee5862fa6a9b7a6

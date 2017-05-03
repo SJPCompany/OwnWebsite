@@ -18,6 +18,7 @@ a:hover {
     transition-duration: 1s;
 }
 body { background-color: #333 }
+
 #wrap {
     margin: 10px auto;
     width: 500px;
@@ -32,7 +33,7 @@ body { background-color: #333 }
 }
 #sidebar {
     position: fixed;
-    top: 20%;
+    top: 5%;
     left: 0px;
     background-color: white;
     width: 60px;
@@ -63,4 +64,4 @@ body { background-color: #333 }
 #sidebar div:hover {
     background-color: #C9C9C9;
 }
-#sidebar:hover { width: 250px }
+#sidebar:hover { width: 350px }

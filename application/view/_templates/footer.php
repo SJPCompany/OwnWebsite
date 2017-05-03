@@ -11,7 +11,7 @@
 
 
     <div title="SJP is a company made by Stef Bakker, Justin van De Laar en Pieter Mourik"class="footer">
-        <p>Copyright &copy; 2017 SJP company</p>
+        <p style="color: white;">Copyright &copy; 2017 SJP company</p>
     </div>
 </body>
 </html>
