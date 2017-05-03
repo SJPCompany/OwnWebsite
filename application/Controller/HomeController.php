@@ -15,6 +15,11 @@ use Mini\Model\Account;
 
 class HomeController
 {
+    public function logoutUser() {
+        session_destroy();
+        header('location: ' . URL . 'home/index');
+    }
+
     public function CheckUSER()
     {
         if (!isset($_SESSION['username'])) {
