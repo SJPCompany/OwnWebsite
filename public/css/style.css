@@ -3,10 +3,8 @@ body {
     font-size: 14px;
     color: #454545;
     height: 100%;
-}
-
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px #92D3ED inset;
+    margin: 0;
+    padding-left: 240px;
 }
 input {
     color: #0f0f0f!important;

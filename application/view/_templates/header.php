@@ -14,7 +14,6 @@
     <!-- CSS -->
     <link href="<?php echo URL; ?>css/style.css" rel="stylesheet">
     <link href="<?php echo URL; ?>css/bootstrap.min.css" rel="stylesheet">
-    <script src="<?php echo URL; ?>js/bootstrap-second.js"></script>
     <link href="<?php echo URL; ?>css/navigation-menu.css" rel="stylesheet">
 
     <script src="<?php echo URL; ?>public/js/navigation.js"></script>
