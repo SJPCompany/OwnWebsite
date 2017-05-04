@@ -7,6 +7,7 @@
     <script src="<?php echo URL; ?>public/js/clock-date.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo URL; ?>public/js/bootstrap.min.js"></script>
+    <script src="<?php echo URL; ?>js/bootstrap-second.js"></script>
     <script src="<?php echo URL; ?>public/js/application.js"></script>
 
 

@@ -36,6 +36,8 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateKC() {
-    document.body.style.backgroundImage = "url('../public/img/kc.png')";
+    //document.getElementsByClassName('menu').backgroundImage = "url('../public/img/kc.png')";
+    document.getElementById('ps').style.backgroundImage="url('../public/img/ps.png')";
+    //document.body.style.backgroundImage = "url('../public/img/kc.png')";
     alert("Congratulations you found me! You're now entering a whole other realm...");
 }

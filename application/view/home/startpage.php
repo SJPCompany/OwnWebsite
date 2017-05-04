@@ -1,3 +1,4 @@
+<main>
 <div id="content-wrapper">
 
     <div class="main-text">
@@ -5,3 +6,4 @@
     </div>
 
 </div>
+</main>
