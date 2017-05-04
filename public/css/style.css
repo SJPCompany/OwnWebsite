@@ -7,7 +7,7 @@ body {
     padding-left: 240px;
     padding-top: 35px;
 }
-
+/* Used to center the div of the login page */
 .center {
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -15,9 +15,11 @@ body {
     height: 100%;
     margin: 0;
     padding-left: 0px;
-
+}
+/* Changes the color of the input box on the login page */
 input {
     color: #0f0f0f!important;
+    text-align: center;
 }
 .container {
     color: black;
@@ -27,6 +29,7 @@ input {
     background-color: white;
     max-width: 35%;
 }
+/* Everything on the bottom of the page */
 .footer {
     position:fixed;
     height:50px;
@@ -39,10 +42,6 @@ input {
 
 .footer a {
     color: #454545;
-}
-
-input{
-    text-align: center;
 }
 
 .main {
@@ -147,13 +146,14 @@ th, td {
     max-width: 80%;
 }
 
+/* Used for the select box in the add user page */
 .select-style {
     border: 1px solid #ccc;
     width: 190px;
     height: 30px;
     border-radius: 3px;
     overflow: hidden;
-    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+    text-align: center;
 }
 
 .select-style select {
