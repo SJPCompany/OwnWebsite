@@ -4,10 +4,6 @@
     font-weight: 400;
     src: local('Didact Gothic'), local('DidactGothic'), url(http://themes.googleusercontent.com/static/fonts/didactgothic/v5/v8_72sD3DYMKyM0dn3LtWp_RtrTXGeaL_Dia6_H9gNs.woff) format('woff');
 }
-* {
-    font-family: 'Didact Gothic', sans-serif;
-    color: white;
-}
 a {
     text-decoration: none;
     color: black;

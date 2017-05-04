@@ -8,7 +8,9 @@ body {
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #92D3ED inset;
 }
-
+input {
+    color: #0f0f0f!important;
+}
 .container {
     color: black;
     padding: 20px;

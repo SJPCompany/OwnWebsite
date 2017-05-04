@@ -5,7 +5,7 @@
         </div>
 
         <div class="fa fa-search fa-2x" style="color: #0f0f0f;">
-            <a href="<?php echo URL; ?>search/index">Search</a>
+            <a href="<?php echo URL; ?>search/SearchPage">Search</a>
         </div>
         <div class="fa fa-shopping-basket fa-2x" style="color: #0f0f0f;">
             <a href="<?php echo URL; ?>orderform/index">Order&#160;Formulier</a>
