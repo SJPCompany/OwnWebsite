@@ -5,8 +5,17 @@ body {
     height: 100%;
     margin: 0;
     padding-left: 240px;
+    padding-top: 35px;
 }
 
+.center {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #454545;
+    height: 100%;
+    margin: 0;
+    padding-left: 0px;
+}
 .container {
     color: black;
     padding: 20px;

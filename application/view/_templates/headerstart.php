@@ -16,4 +16,4 @@
     <link href="<?php echo URL; ?>css/style.css" rel="stylesheet">
     <link href="<?php echo URL; ?>css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body  style="background-color: #333;">
+    <body class="center" style="background-color: #333;">

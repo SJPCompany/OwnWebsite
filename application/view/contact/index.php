@@ -2,7 +2,6 @@
     <h2>Contact/Problems</h2>
     <p>If you encounter any sort of problem with the site, please fill in the form below.</p>
 
-    <p>* required field.</span></p>
     <form method="post" action="#">
 
         * Name: <input type="text" name="name">
@@ -15,11 +14,6 @@
 
         <br><br>
 
-        * Website: <input type="text" name="website">
-        <span class="error"></span>
-
-        <br><br>
-
         * Comment: <textarea name="comment" rows="5" cols="40"></textarea>
         <span class="error"></span>
 
@@ -27,5 +21,6 @@
 
         <input type="submit" name="submit" value="Submit">
     </form>
-
+    <br>
+    <p style="color: red">* required field.</p>
 </div>

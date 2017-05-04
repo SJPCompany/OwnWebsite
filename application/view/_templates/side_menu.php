@@ -6,10 +6,16 @@
             <h2>ScanSystem</h2>
         </header>
         <ul>
-            <li tabindex="0" class="icon-dashboard"><a href="<?php echo URL; ?>home/startpage"><span>Dashboard</a></span></li>
-            <li tabindex="0" class="icon-customers"><a href="<?php echo URL; ?>search/SearchPage"><span>Customers</span></a></li>
-            <li tabindex="0" class="icon-users"><span>Users</span></li>
-            <li tabindex="0" class="icon-settings"><span>Settings</span></li>
+            <li tabindex="0" class="icon-dashboard"  ><a href="<?php echo URL; ?>home/startpage"><span>Dashboard</a></span></li>
+            <li tabindex="0" class="icon-search"     ><a href="<?php echo URL; ?>search/SearchPage"><span>Search Part</span></a></li>
+            <li tabindex="0" class="icon-ordeform"   ><a href="<?php echo URL; ?>orderform/index"><span>Order Formulier</span></li>
+            <li tabindex="0" class="icon-addpart"    ><a href="#"><span>Add part</span></a></li>
+            <li tabindex="0" class="icon-price"      ><a href="#"><span>Price Checker</span></a></li>
+            <li tabindex="0" class="icon-adduser"    ><a href="<?php echo URL; ?>admin/adduser"><span>Add User</span></a></li>
+            <li tabindex="0" class="icon-currentuser"><a href="#"><span>Current User:</span></a></li>
+            <li tabindex="0" class="icon-contact"    ><a href="<?php echo URL; ?>contact/index"><span>Contact/Problems</span></a></li>
+            <li tabindex="0" class="icon-logout"     ><a href="<?php echo URL; ?>home/index"><span>Logout</span></a></li>
+
         </ul>
     </nav>
 </div>
