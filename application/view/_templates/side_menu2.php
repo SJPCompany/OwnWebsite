@@ -8,4 +8,5 @@
     <li><a href="#"><span class="fa fa-user-circle"></span>Current User:</a></li>
     <li><a href="<?php echo URL; ?>contact/index"><span class="fa fa-question"></span>Contact/Problems</a></li>
     <li><a href="<?php echo URL; ?>home/index"><span class="fa fa-power-off"></span>Logout</a></li>
+    TEST
 </ul>
