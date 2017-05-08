@@ -37,7 +37,6 @@
             <li tabindex="0" class="icon-dashboard"  ><a href="<?php echo URL; ?>home/startpage"><span>Dashboard</a></span></li>
             <li tabindex="0" class="icon-search"     ><a href="<?php echo URL; ?>search/SearchPage"><span>Search Part</span></a></li>
             <li tabindex="0" class="icon-ordeform"   ><a href="<?php echo URL; ?>orderform/index"><span>Order Formulier</span></li>
-            <li tabindex="0" class="icon-addpart"    ><a href="#"><span>Add part</span></a></li>
             <li tabindex="0" class="icon-price"      ><a href="#"><span>Price Checker</span></a></li>
             <li tabindex="0" class="icon-currentuser"><span>Current User:
                     <?php
