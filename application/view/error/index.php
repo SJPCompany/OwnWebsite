@@ -1,4 +1,6 @@
 <div class="container">
-	<p>This is the Error-page. Will be shown when a page (= controller / method) does not exist.
-		<br> U will be redirected back to the Home Page</p>
+	<p>This page doens`t exist <br>
+     Click below here to go back to the homepage</p> <br>
+    <label>GO back to home page</label>
+    <a href="<?php echo URL; ?>home/index">Go back</a>
 	</div>
