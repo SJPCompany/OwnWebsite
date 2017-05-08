@@ -15,10 +15,12 @@ h2 {
 a {
     color: white;
     display: block;
+    text-decoration: none;
 }
 
 a:hover {
     color: #2aabd2;
+    text-decoration: none;
 }
 main {
     position: relative;
