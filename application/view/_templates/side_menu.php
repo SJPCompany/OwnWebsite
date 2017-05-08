@@ -12,7 +12,12 @@
             <li tabindex="0" class="icon-addpart"    ><a href="#"><span>Add part</span></a></li>
             <li tabindex="0" class="icon-price"      ><a href="#"><span>Price Checker</span></a></li>
             <li tabindex="0" class="icon-adduser"    ><a href="<?php echo URL; ?>admin/adduser"><span>Add User</span></a></li>
-            <li tabindex="0" class="icon-currentuser"><a href="#"><span>Current User:</span></a></li>
+            <li tabindex="0" class="icon-currentuser"><span>Current User:
+                    <?php
+                    if (isset($_SESSION['username'])) {
+                        echo $_SESSION['username'];
+                    }
+                    ?></span></li>
             <li tabindex="0" class="icon-contact"    ><a href="<?php echo URL; ?>contact/index"><span>Contact/Problems</span></a></li>
             <li tabindex="0" class="icon-logout"     ><a href="<?php echo URL; ?>home/index"><span>Logout</span></a></li>
 
