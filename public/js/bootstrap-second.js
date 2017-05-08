@@ -41,3 +41,39 @@ function activateKC() {
     //document.body.style.backgroundImage = "url('../public/img/kc.png')";
     alert("Congratulations you found me! You're now entering a whole other realm...");
 }
+
+// Used for 404 page not found
+
+var allowedKeyss = {
+    32: 'spacebar',
+};
+
+var ee2 = ['spacebar'];
+
+// a variable to remember the 'position' the user has reached so far.
+var ee2Position = 0;
+
+// add keydown event listener
+document.addEventListener('keydown', function(e) {
+    // get the value of the key code from the key map
+    var key = allowedKeyss[e.keyCode];
+    // get the value of the required key from the ee2 code
+    var requiredKey = ee2[ee2Position];
+
+    // compare the key with the required key
+    if (key == requiredKey) {
+
+        // move to the next key in the ee2 code sequence
+        ee2Position++;
+
+        // if the last key is reached, activate cheats
+        if (ee2Position == ee2.length)
+            pictureChange();
+    } else
+        ee2Position = 0;
+});
+
+function pictureChange()
+{
+    document.getElementById("image").src="../scansystem/public/img/404.jpg";
+}

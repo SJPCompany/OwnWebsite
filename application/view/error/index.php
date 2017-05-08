@@ -1,6 +1,9 @@
-<div class="container">
-	<p>This page doens`t exist <br>
+<div class="error_container">
+    <img class="image" src="<?php echo URL; ?>img/error.png">
+    <br>
+    <br>
+    <h1>Oops</h1>
+    <p>We're sorry, but something went wrong. <br>
      Click below here to go back to the homepage</p> <br>
-    <label>GO back to home page</label>
-    <a class="back" href="<?php echo URL; ?>home/startpage">Go back</a>
+    <a class="back" href="<?php echo URL; ?>home/startpage">Take me back to the homepage</a>
 	</div>
