@@ -8,16 +8,16 @@
     <link rel='shortcut icon' type='image/x-icon' href='<?php echo URL; ?>img/favicon.ico'/>
 
     <!-- JS -->
-    <!-- please note: The JavaScript files are loaded in the footer to speed up page construction -->
-    <!-- See more here: http://stackoverflow.com/q/2105327/1114320 -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="<?php echo URL; ?>public/js/preloader.js"></script>
+    <script src="<?php echo URL; ?>public/js/jquery.js"></script>
+    <script src="https://use.fontawesome.com/9a3a28837a.js"></script>
 
     <!-- CSS -->
     <link href="<?php echo URL; ?>css/style.css" rel="stylesheet">
     <link href="<?php echo URL; ?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo URL; ?>css/navigation-menu.css" rel="stylesheet">
-
-    <script src="<?php echo URL; ?>public/js/navigation.js"></script>
-    <script src="<?php echo URL; ?>public/js/jquery.js"></script>
-    <script src="https://use.fontawesome.com/9a3a28837a.js"></script>
 </head>
 <body>
+<div class="js">
+    <div id="preloader"></div>
