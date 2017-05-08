@@ -99,6 +99,7 @@ main .helper {
 }
 .menu ul li.icon-currentuser{
     background-image: url("../icon/user.png");
+    color: white;
 }
 .menu ul li.icon-contact {
     background-image: url("../icon/contact.png");
