@@ -170,3 +170,13 @@ th, td {
 .select-style select:focus {
     outline: none;
 }
+
+.back {
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.back:hover {
+    text-decoration: underline;
+    color: #afafaf;
+}
