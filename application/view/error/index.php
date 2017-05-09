@@ -1,5 +1,5 @@
 <div class="error_container">
-    <img class="image" src="<?php echo URL; ?>img/error.png">
+    <img id="image" src="<?php echo URL; ?>img/error.png">
     <br>
     <br>
     <h1>Oops</h1>
