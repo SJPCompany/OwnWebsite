@@ -73,10 +73,9 @@ input {
 }
 
 #image {
-    height: 40%;
+    height: 0%;
     width: 40%;
 }
-
 .link {
     float: left;
 }

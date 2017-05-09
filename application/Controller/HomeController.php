@@ -35,8 +35,6 @@ class HomeController
         // load views
         require APP . 'view/_templates/headerstart.php';
         require APP . 'view/home/index.php';
-        require APP . 'view/_templates/footer.php';
-
     }
 
     public function dologin() {
