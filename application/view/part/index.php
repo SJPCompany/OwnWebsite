@@ -22,14 +22,17 @@
                     <td><?php echo htmlspecialchars($type->barcode, ENT_QUOTES, 'UTF-8'); ?></td>
                     <td><?php echo htmlspecialchars($type->herkomst, ENT_QUOTES, 'UTF-8'); ?></td>
                     <td><?php echo htmlspecialchars($type->fabrikant, ENT_QUOTES, 'UTF-8'); ?></td>
-                    <td><a class="tablelink" href="part/editPart/<?php echo $type->id; ?>">Edit</a></td>
+                    <td><a class="tablelink" href="<?php echo URL; ?>part/editPart/<?php echo $type->id; ?>">Edit</a></td>
                     <?php if(isset($_SESSION['admin'])) { ?>
-                    <td><a class="tablelink" href="part/deletePart/<?php echo $type->id; ?>">delete</a></td>
+                    <td><a class="tablelink" href="<?php echo URL; ?>part/deletePart/<?php echo $type->id; ?>">delete</a></td>
                     <?php } ?>
                 </tr>
             <?php } ?>
                 </tbody>
             </table>
+            <?php if(isset($_SESSION['admin'])) { ?>
+            <a class="tablelink" href="<?php echo URL; ?>part/create"> Create part </a>
+            <?php } ?>
         </div>
 
     </div>
