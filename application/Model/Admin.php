@@ -36,7 +36,7 @@ class Admin extends Model
         $query = $this->db->prepare($sql);
 
         // encrypt the password
-        $password = password_hash($password, PASSWORD_BCRYPT);
+        $password = hash('sha256', $password);
         $parameters = array(':username' => $username, ':password' => $password, ':email' => $email, ':role' => $role);
 
         // useful for debugging: you can see the SQL behind above construction by using:

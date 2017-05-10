@@ -47,9 +47,8 @@ class HomeController
             if(isset($_POST['submit'])) {
                 $username = $_POST['username'];
                 $password = $_POST['password'];
-                $role = $_POST['role'];
                 $user = new Account();
-                $user->getUsers($username, $password, $role);
+                $user->getUsers($username, $password);
             } else {
                 die("Submit is not working sorry");
             }
