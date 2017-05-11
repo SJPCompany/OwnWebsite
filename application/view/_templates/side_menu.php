@@ -14,7 +14,7 @@
             <li tabindex="0" class="icon-price"      ><a href="checker/pricechecker"><span>Price Checker</span></a></li>
             <li tabindex="0" class="icon-currentuser"><a href="<?php echo URL; ?>user/index"><span>Users</span></a></li>
             <li tabindex="0" class="icon-adduser"    ><a href="<?php echo URL; ?>admin/adduser"><span>Add User</span></a></li>
-            <li tabindex="0" class="icon-currentuser"><span>Current User:
+            <li tabindex="0" class="icon-currentuser"><span>Current User:<br>
                     <?php
                     if (isset($_SESSION['username'])) {
                         echo $_SESSION['username'];

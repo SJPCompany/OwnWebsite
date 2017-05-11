@@ -51,7 +51,7 @@ main .helper {
     outline: none;
 }
 .menu .avatar {
-    background: rgba(0, 0, 0, 0.1);
+    background: #2aabd2;
     padding: 2em 0.5em;
     text-align: center;
 }
