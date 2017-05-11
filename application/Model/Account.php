@@ -9,19 +9,20 @@
 namespace Mini\Model;
 
 use Mini\Core\Model;
+use Mini\Libs\Helper;
 
 class Account extends Model
 {
     // get the user from the database
-    public function getUsers($username, $password, $role)
+    public function getUsers($username, $password)
     {
-        $sql = "SELECT * FROM account WHERE username = :username";
+        $password = hash('sha256', $password);
+        $sql = "SELECT * FROM account WHERE username = :username AND password = :password";
         $query = $this->db->prepare($sql);
-        $parameters = array(':username' => $username);
+        $parameters = array(':username' => $username, ':password' => $password);
 
         // useful for debugging: you can see the SQL behind above construction by using:
         // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
-
         $query->execute($parameters);
 
         // Check if the user already exists
@@ -29,33 +30,18 @@ class Account extends Model
         if ($count == 0) {
            die('user doesn`t exist');
         } elseif ($count == 1) {
-            $this->checkRole($username);
+            $this->checkRole($username, $password);
         } else {
             echo "You already exists";
         }
 
     }
 
-    // if the user doesn`t exist then save them to the database
-    public function registerUser($username, $password, $role) {
-        $sql = "INSERT INTO account (username, password, role) VALUES (:username, :password, :role)";
-        $query = $this->db->prepare($sql);
-        // encrypt the password
-        $password = password_hash($password, PASSWORD_BCRYPT);
-        $parameters = array(':username' => $username, ':password' => $password, ':role' => $role);
-
-        // useful for debugging: you can see the SQL behind above construction by using:
-        // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
-        $query->execute($parameters);
-        //Send the user to the startpage
-        header('location: ' . URL . 'home/startpage');
-    }
-
     // Check the role of the user
-    public function checkRole($username) {
-        $sql = "SELECT * FROM account WHERE username = :username";
+    public function checkRole($username, $password) {
+        $sql = "SELECT * FROM account WHERE username = :username AND password = :password";
         $query = $this->db->prepare($sql);
-        $parameters = array(':username' => $username);
+        $parameters = array(':username' => $username, ':password' => $password);
 
         $query->execute($parameters);
         $role = $query->fetch();
