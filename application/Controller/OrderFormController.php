@@ -9,6 +9,8 @@
 namespace Mini\Controller;
 
 
+use Mini\Model\Orderform;
+
 class OrderFormController
 {
     public function CheckUSER()
@@ -26,6 +28,22 @@ class OrderFormController
         require APP . 'view/orderform/index.php';
         require APP . 'view/_templates/footer.php';
         require APP . 'view/_templates/side_menu.php';
+
+    }
+    public function email()
+    {
+        if ($_POST['firstname'] == '' || $_POST['lastname'] == ''|| $_POST['email'] == ''|| $_POST['parts'] == '') {
+            die("Some fields has been left empty  <a href='OrderFormController.php'> ga terug</a>");
+
+        }
+
+     if (isset($_POST["submit"])) {
+
+            $order = new Orderform();
+
+            $order->emailorder($_POST["firstname"], $_POST["lastname"],  $_POST["email"],  $_POST["parts"]);
+
+        }
 
     }
 
