@@ -207,3 +207,11 @@ th, td {
     overflow: visible;
     background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center;
 }
+
+#choose{
+    background:url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/down4-16.png') right center no-repeat;
+    padding:0 20px 0 10px;
+    border:solid 1px #eee;
+    width: 174px;
+    height: 26px;
+}

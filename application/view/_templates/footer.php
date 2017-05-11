@@ -17,6 +17,10 @@
         $( function() {
             $( ".draggable" ).draggable();
         } );
+
+        $('#choose').click(function(){
+            $(this).siblings('select').css('width', $(this).outerWidth(true)).toggle();
+        });
     </script>
 
         <div title="SJP is a company made by Stef Bakker, Justin van De Laar en Pieter Mourik powered by ( ͡° ͜ʖ ͡°)" class="footer">

@@ -31,7 +31,7 @@
                 </tbody>
             </table>
             <?php if(isset($_SESSION['admin'])) { ?>
-            <a class="tablelink" href="<?php echo URL; ?>part/create"> Create part </a>
+            <a class="tablelink" href="<?php echo URL; ?>part/createPart"> Create part </a>
             <?php } ?>
         </div>
 

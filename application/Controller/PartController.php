@@ -30,4 +30,12 @@ class PartController
         require APP . 'view/_templates/footer.php';
         require APP . 'view/_templates/side_menu.php';
     }
+
+    public function CreatePart() {
+        $this->CheckUSER();
+        require APP . 'view/_templates/header.php';
+        require APP . 'view/part/create.php';
+        require APP . 'view/_templates/footer.php';
+        require APP . 'view/_templates/side_menu.php';
+    }
 }
