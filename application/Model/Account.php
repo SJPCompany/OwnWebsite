@@ -24,7 +24,6 @@ class Account extends Model
         // useful for debugging: you can see the SQL behind above construction by using:
         // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
         $query->execute($parameters);
-        echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters); echo '<br />';
 
         // Check if the user already exists
         $count = $query->rowCount();
