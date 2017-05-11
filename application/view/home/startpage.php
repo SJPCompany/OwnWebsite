@@ -1,28 +1,7 @@
 <main>
     <div id="content-wrapper">
-
-        <div class="main-text">
-            <h1>Welcome to the scansystem!</h1>
-        </div>
-        <br>
-        <table style="width:80%;">
-            <tr>
-                <th>Release</th>
-                <th>Version</th>
-                <th>Released Changes</th>
-            </tr>
-            <tr>
-                <td>8-5-2017</td>
-                <td>3.5</td>
-                <td>Completely changed menu, it is responsive now.<br>
-                    Changed the login screen, made it look nicer.<br>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+    <div class="main-text">
+        <h1> Welcome to the scansytem</h1>
     </div>
     <br>
     <table class="draggable" style="width:80%;">
@@ -40,6 +19,11 @@
             <td class="draggable">11-5-2017</td>
             <td class="draggable">3.5.1</td>
             <td class="draggable">Added few new things</td>
+        </tr>
+        <tr class="draggable">
+            <td class="draggable">11-5-2017</td>
+            <td class="draggable">3.5.2</td>
+            <td class="draggable">Removed errors in the starpage</td>
         </tr>
     </table>
 </div>
