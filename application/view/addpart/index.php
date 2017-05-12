@@ -14,14 +14,15 @@
         <input type="text" name="barcode"> <br> <br>
         <label> fru: </label> <br>
         <input type="text" name="fru"> <br> <br>
-        <label> amount: </label> <br>
-        <input type="number" name="amount"> <br> <br>
         <label> country: </label> <br>
         <input type="text" name="country"> <br> <br>
         <label> price: </label> <br>
         <input type="number" name="price"> <br> <br>
         <label> year: </label> <br>
         <input type="number" name="year"> <br> <br>
+        <label> amount: </label> <br>
+        <input type="number" name="amount"> <br> <br>
+        <label> image: </label> <br>
         <input type="file" name="image" id="image">
         <input type="submit" name="submit" value="submit"><br><br>
 
