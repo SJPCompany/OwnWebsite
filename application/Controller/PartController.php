@@ -40,6 +40,9 @@ class PartController
     }
 
     public function PostCheck() {
+        if ($_POST['type'] == '' || $_POST['barcode'] == '' || $_POST['fabrikant'] == '') {
+            die('fields has been left empty');
+        }
         if (isset($_POST['submit'])) {
            $type = $_POST['type'];
            $barcode = $_POST['barcode'];
