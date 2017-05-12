@@ -38,4 +38,15 @@ class PartController
         require APP . 'view/_templates/footer.php';
         require APP . 'view/_templates/side_menu.php';
     }
+
+    public function PostCheck() {
+        if (isset($_POST['submit'])) {
+           $type = $_POST['type'];
+           $barcode = $_POST['barcode'];
+           $herkomst = $_POST['herkomst'];
+           $fabrikant = $_POST['fabrikant'];
+           $part = new Part();
+           $part->createPart($type, $barcode, $herkomst, $fabrikant);
+        }
+    }
 }
