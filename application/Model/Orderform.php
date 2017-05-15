@@ -14,10 +14,9 @@ use Mini\Core\Model;
 class Orderform extends Model
 {
 
-    public function emailorder($firstname, $lastname, $email, $parts)
+    public function emailorder($firstname, $lastname, $email, $parts , $other)
     {
-        echo "test";
-        echo '<pre>'; var_dump($firstname ,$lastname,$email,$parts); echo '</pre>';
+        echo '<pre>'; var_dump($firstname ,$lastname,$email,$parts , $other); echo '</pre>';
 
     }
 }

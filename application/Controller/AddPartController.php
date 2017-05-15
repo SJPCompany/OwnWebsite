@@ -39,8 +39,8 @@ class AddPartController
                 $_POST["price"],  $_POST["year"],  $_POST["amount"]);
 
         }
-
         //header('location: ' . URL . 'home/index');
+
 
     }
 }
