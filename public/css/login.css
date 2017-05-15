@@ -74,15 +74,15 @@ after { clear: both; }
 }
 
 #login form input[type="submit"] {
-    background: #328F7F;
+    background: grey;
     border: 0;
     width: 100%;
     height: 40px;
     border-radius: 3px;
-    color: white;
+    color: white !important;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
 #login form input[type="submit"]:hover {
-    background: #92D3ED;
+    background: #333333;
 }
