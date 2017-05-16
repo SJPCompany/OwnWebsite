@@ -9,6 +9,7 @@
 namespace Mini\Model;
 use Mini\Core\Model;
 use Mini\Libs\Helper;
+use mysqli;
 
 class Part extends Model
 {
@@ -32,6 +33,42 @@ class Part extends Model
         $query->execute($parameters);
 
         //Send the user back
+        header('location: ' . URL . 'part/viewpart');
+    }
+    public function getPartByID($id) {
+        $sql = "SELECT * FROM parttype WHERE id=:id";
+        $query = $this->db->prepare($sql);
+
+        $parameters = array(':id' => $id);
+        // useful for debugging: you can see the SQL behind above construction by using:
+        // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
+        $query->execute($parameters);
+        return $query->fetchAll();
+    }
+
+    public function saveEditPart($id, $type, $barcode, $herkomst, $fabrikant) {
+        $sql = "UPDATE parttype SET type= :type , barcode= :barcode , herkomst= :herkomst , fabrikant= :fabrikant WHERE id= :id ";
+        $query = $this->db->prepare($sql);
+
+        // useful for debugging: you can see the SQL behind above construction by using:
+        // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
+        $parameters = array(':type' => $type, ':barcode' => $barcode, ':herkomst' => $herkomst, ':fabrikant' => $fabrikant, ':id' => $id);
+        $result = $query->execute($parameters);
+
+        // Send user back
+        header('location: ' . URL . 'part/viewpart');
+    }
+
+    public function deletePart($id) {
+        $sql = "DELETE FROM parttype WHERE id= :id ";
+        $query = $this->db->prepare($sql);
+
+        // useful for debugging: you can see the SQL behind above construction by using:
+        // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
+        $parameters = array(':id' => $id);
+        $query->execute($parameters);
+
+        // Send user back
         header('location: ' . URL . 'part/viewpart');
     }
 }
