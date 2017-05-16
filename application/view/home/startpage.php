@@ -25,6 +25,11 @@
             <td class="draggable">3.5.2</td>
             <td class="draggable">Removed errors in the starpage</td>
         </tr>
+        <tr class="draggable">
+            <td class="draggable">16-5-2017</td>
+            <td class="draggable">3.5.5</td>
+            <td class="draggable">Add crud for the parttype</td>
+        </tr>
     </table>
 </div>
 </main>
