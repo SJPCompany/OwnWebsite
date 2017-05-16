@@ -16,8 +16,9 @@ class Addform extends Model
 
     public function addpart($parttype, $partserie, $other, $manufacturer, $barcode ,$fru , $country , $price ,$year , $amount)
     {
+        $RandomAccountNumber = uniqid();
         $target_dir = "upload/";
-        $target_file = $target_dir . basename($_FILES["image"]["name"]);
+        $target_file = $target_dir . basename($_FILES["image"] ["name"]);
         $uploadOk = 1;
         $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
@@ -52,13 +53,16 @@ class Addform extends Model
 // if everything is ok, try to upload file
         } else {
             if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-                echo "The file ". basename( $_FILES["image"]["name"]). " has been uploaded.";
+              $message =  "The file ". basename( $_FILES["image"]["name"]). " has been uploaded.";
 
-                $sql = "INSERT INTO createform (parttype, partserie, other, manufacturer, barcode, fru , country, price, year, amount , image) VALUES (:parttype, :partserie, :other ,:manufacturer ,:barcode, :fru ,:counrty, :price, :year , :amount , :image) ";
+                $sql = "INSERT INTO createform (parttype, partserie, other, manufacturer, barcode, fru , country, price, year, amount , image) VALUES (:parttype, :partserie, :other ,:manufacturer ,:barcode, :fru ,:country, :price, :year , :amount , :image) ";
                 $query = $this->db->prepare($sql);
                 $parameters = array(':parttype' => $parttype, ':partserie' => $partserie, ':other' => $other, ':manufacturer' => $manufacturer, ':barcode' => $barcode, ':fru' => $fru, ':country' => $country, ':price' => $price, ':year' => $year , ':amount' => $amount, ':image' => $target_file);
 
                 $query->execute($parameters);
+
+                return $message;
+
 
 
             } else {

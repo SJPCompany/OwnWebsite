@@ -34,6 +34,10 @@
             <a class="tablelink" href="<?php echo URL; ?>part/createPart"> Create part </a>
             <?php } ?>
         </div>
-
     </div>
+
+    <div class="counter"></div>
+
+    <button class="paginate left"><i></i><i></i></button>
+    <button class="paginate right"><i></i><i></i></button>
 </main>

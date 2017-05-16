@@ -33,7 +33,7 @@ class OrderFormController
     public function email()
     {
         if ($_POST['firstname'] == '' || $_POST['lastname'] == ''|| $_POST['email'] == ''|| $_POST['parts'] == '') {
-            die("Some fields has been left empty  <a href='OrderFormController.php'> ga terug</a>");
+            die("vul alles in");
 
         }
 
@@ -41,7 +41,7 @@ class OrderFormController
 
             $order = new Orderform();
 
-            $order->emailorder($_POST["firstname"], $_POST["lastname"],  $_POST["email"],  $_POST["parts"]);
+            $order->emailorder($_POST["firstname"], $_POST["lastname"],  $_POST["email"],  $_POST["parts"],  $_POST["other"]);
 
         }
 
