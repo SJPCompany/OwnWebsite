@@ -1,4 +1,9 @@
-// basic paging logic to demo the buttons
+var d = new Date();
+var n = d.getDay();
+console.log(n);
+document.getElementById('date').innerHTML = n;
+
+//basic paging logic to demo the buttons
 var pr = document.querySelector( '.paginate.left' );
 var pl = document.querySelector( '.paginate.right' );
 
@@ -17,9 +22,3 @@ function slide(offset) {
 }
 
 slide(0);
-
-function DateMonth() {
-    var d = new Date();
-    var n = d.getDay()
-    document.getElementById("month").innerHTML = n;
-}
