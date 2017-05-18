@@ -26,5 +26,5 @@
             <td class="draggable">Add crud for the parttype</td>
         </tr>
     </table>
-        <p class="calendar">22<em>February</em></p>
+        <p class="calendar"><strong id="date"></strong><em>February</em></p>
 </main>
