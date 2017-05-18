@@ -4,8 +4,21 @@ var n = day.getDate();
 document.getElementById('date').innerHTML = n;
 
 // The Month of the year
-var month = new Month();
-var m = month.getMonth();
+var month = new Date();
+var arr = new Array();
+arr[0] = "January";
+arr[1] = "February";
+arr[2] = "March";
+arr[3] = "April";
+arr[4] = "May";
+arr[5] = "June";
+arr[6] = "July";
+arr[7] = "August";
+arr[8] = "September";
+arr[9] = "October";
+arr[10] = "November";
+arr[11] = "December";
+var m = arr[month.getMonth()];
 document.getElementById('month').innerHTML = m;
 
 
