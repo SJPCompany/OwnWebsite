@@ -1,7 +1,13 @@
-var d = new Date();
-var n = d.getDay();
-console.log(n);
+// The day of the week
+var day = new Date();
+var n = day.getDate();
 document.getElementById('date').innerHTML = n;
+
+// The Month of the year
+var month = new Month();
+var m = month.getMonth();
+document.getElementById('month').innerHTML = m;
+
 
 //basic paging logic to demo the buttons
 var pr = document.querySelector( '.paginate.left' );
