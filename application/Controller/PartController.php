@@ -76,14 +76,23 @@ class PartController
     }
 
     public function saveEditPart() {
+        $type = NULL;
         if (isset($_POST['submit'])) {
             $id = $_POST['id'];
-            $type = $_POST['type'];
+            if (isset($_POST['type'])) {
+                $type = $_POST['type'];
+            }
             $barcode = $_POST['barcode'];
             $herkomst = $_POST['herkomst'];
             $fabrikant = $_POST['fabrikant'];
-            $save = new Part();
-            $save->saveEditPart($id, $type, $barcode, $herkomst, $fabrikant);
+
+            if ($type === NULL) {
+                $link_hippie = "viewpart";
+                echo "<a class='item' href='" . $link_hippie . "'> No type has been given  </a>";
+            } else {
+                $save = new Part();
+                $save->saveEditPart($id, $type, $barcode, $herkomst, $fabrikant);
+            }
         }
     }
 
