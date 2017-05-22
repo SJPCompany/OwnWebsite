@@ -30,9 +30,7 @@
             <?php } ?>
                 </tbody>
             </table>
-            <?php if(isset($_SESSION['admin'])) { ?>
             <a class="tablelink" href="<?php echo URL; ?>part/createPart"> Create part </a>
-            <?php } ?>
         </div>
     </div>
 
