@@ -26,5 +26,7 @@
             <td class="draggable">Add crud for the parttype</td>
         </tr>
     </table>
+        <div class="draggable">
         <p class="calendar"><em><strong id="month"></strong></em><strong id="date"></strong></p>
+        </div>
 </main>
