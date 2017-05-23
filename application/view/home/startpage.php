@@ -18,13 +18,15 @@
         <tr class="draggable">
             <td class="draggable">11-5-2017</td>
             <td class="draggable">3.5.1</td>
-            <td class="draggable">Added few new things</td>
+            <td class="draggable">Added few new things<br>Removed errors in the starpage</td>
         </tr>
         <tr class="draggable">
-            <td class="draggable">11-5-2017</td>
-            <td class="draggable">3.5.2</td>
-            <td class="draggable">Removed errors in the starpage</td>
+            <td class="draggable">16-5-2017</td>
+            <td class="draggable">3.5.5</td>
+            <td class="draggable">Add crud for the parttype</td>
         </tr>
     </table>
-</div>
+        <div class="draggable">
+        <p class="calendar"><em><strong id="month"></strong></em><strong id="date"></strong></p>
+        </div>
 </main>

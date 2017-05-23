@@ -12,8 +12,7 @@
             <li tabindex="0" class="icon-ordeform"   ><a href="<?php echo URL; ?>orderform/index"><span>Order Formulier</span></li>
             <li tabindex="0" class="icon-addpart"    ><a href="<?php echo URL; ?>part/viewpart"><span>part</span></a></li>
             <li tabindex="0" class="icon-price"      ><a href="checker/pricechecker"><span>Price Checker</span></a></li>
-            <li tabindex="0" class="icon-currentuser"><a href="<?php echo URL; ?>user/index"><span>Users</span></a></li>
-            <li tabindex="0" class="icon-adduser"    ><a href="<?php echo URL; ?>admin/adduser"><span>Add User</span></a></li>
+            <li tabindex="0" class="icon-currentuser"><a href="<?php echo URL; ?>admin/viewUser"><span>View users</span></a></li>
             <li tabindex="0" class="icon-currentuser"><span>Current User:<br>
                     <?php
                     if (isset($_SESSION['username'])) {
