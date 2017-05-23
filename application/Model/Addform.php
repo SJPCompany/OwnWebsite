@@ -14,11 +14,11 @@ use Mini\Core\Model;
 class Addform extends Model
 {
 
-    public function addpart($parttype, $partserie, $other, $manufacturer, $barcode ,$fru , $country , $price ,$year , $amount)
+    public function addpart($parttype, $partserie, $other, $manufacturer, $barcode ,$fru , $country , $price ,$year , $amount ,$location )
     {
         $RandomAccountNumber = uniqid();
         $target_dir = "upload/";
-        $target_file = $target_dir . basename($_FILES["image"] ["name"]);
+        $target_file = $target_dir . basename($_FILES["image"] .$_FILES{uniqid()});
         $uploadOk = 1;
         $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
@@ -29,6 +29,9 @@ class Addform extends Model
                 $uploadOk = 1;
             } else {
                 echo "File is not an image.";
+                $message = "file is not an image";
+                return $message;
+
                 $uploadOk = 0;
             }
         }
@@ -52,24 +55,20 @@ class Addform extends Model
             echo "Sorry, your file was not uploaded.";
 // if everything is ok, try to upload file
         } else {
-            if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+            if (move_uploaded_file($_FILES["image"]["tmp_name"] , $target_file)) {
               $message =  "The file ". basename( $_FILES["image"]["name"]). " has been uploaded.";
 
-                $sql = "INSERT INTO createform (parttype, partserie, other, manufacturer, barcode, fru , country, price, year, amount , image) VALUES (:parttype, :partserie, :other ,:manufacturer ,:barcode, :fru ,:country, :price, :year , :amount , :image) ";
+                $sql = "INSERT INTO createform (parttype, partserie, other, manufacturer, barcode, fru , country, price, year, amount , location ,image) VALUES (:parttype, :partserie, :other ,:manufacturer ,:barcode, :fru ,:country, :price, :year , :amount ,:location  , :image) ";
                 $query = $this->db->prepare($sql);
-                $parameters = array(':parttype' => $parttype, ':partserie' => $partserie, ':other' => $other, ':manufacturer' => $manufacturer, ':barcode' => $barcode, ':fru' => $fru, ':country' => $country, ':price' => $price, ':year' => $year , ':amount' => $amount, ':image' => $target_file);
+                $parameters = array(':parttype' => $parttype, ':partserie' => $partserie, ':other' => $other, ':manufacturer' => $manufacturer, ':barcode' => $barcode, ':fru' => $fru, ':country' => $country, ':price' => $price, ':year' => $year , ':amount' => $amount, ':location' => $location, ':image' => $target_file);
 
                 $query->execute($parameters);
-
-                return $message;
-
-
 
             } else {
                 echo "Sorry, there was an error uploading your file.";
             }
         }
-
+        return $message;
     }
 
 

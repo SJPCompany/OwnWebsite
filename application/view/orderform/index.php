@@ -11,7 +11,7 @@
         <textarea name="parts" maxlength="5000" cols="100" rows="10"> </textarea><br> <br>
         <label> eventuele toevoegingen : </label> <br>
         <textarea name="other" maxlength="1000" cols="50" rows="5"> </textarea><br> <br>
-    <input type="submit" value="submit">
+    <input type="submit" name="submit" value="submit">
 
 
     </form>
