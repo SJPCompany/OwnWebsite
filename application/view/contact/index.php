@@ -2,7 +2,7 @@
     <h1>Contact/Problems</h1>
     <p>If you encounter any sort of problem with the site, please fill in the form below.</p>
 
-    <form method="post" action="#">
+    <form method="post" action="<?php echo URL; ?>contact/sendMail"">
 
         * Name: <input type="text" name="name">
         <span class="error"></span>

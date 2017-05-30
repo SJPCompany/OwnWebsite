@@ -27,6 +27,6 @@
         </tr>
     </table>
         <div class="draggable">
-        <p class="calendar"><em><strong id="month"></strong></em><strong id="date"></strong></p>
+            <p class="calendar"><em><strong id="month"></strong></em><strong id="date"></strong></p>
         </div>
 </main>

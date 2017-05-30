@@ -19,6 +19,6 @@ session_destroy()
 
             </form>
             <br>
-            <a style="color: black;" href="<?php echo URL; ?>reset/resetpage"> Forgot password ?</a>
+            <a style="color: black;" href="<?php echo URL; ?>home/ForgotPassword"> Forgot password ?</a>
         </div>
 </div>

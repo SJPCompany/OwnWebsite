@@ -25,4 +25,12 @@ class ContactController
         require APP . 'view/_templates/footer.php';
         require APP . 'view/_templates/side_menu.php';
     }
+
+    public function sendMail() {
+        $this->CheckUSER();
+        require APP . 'view/_templates/header.php';
+        require APP . 'view/contact/mailscript.php';
+        require APP . 'view/_templates/footer.php';
+        require APP . 'view/_templates/side_menu.php';
+    }
 }
