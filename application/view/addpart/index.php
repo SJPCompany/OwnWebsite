@@ -22,19 +22,11 @@
         <input type="number" name="year"> <br> <br>
         <label> amount: </label> <br>
         <input type="number" name="amount"> <br> <br>
+        <label> location: </label> <br>
+        <input type="text" name="location"> <br> <br>
         <label> image: </label> <br>
         <input type="file" name="image" id="image">
         <input type="submit" name="submit" value="submit"><br><br>
-
-<!--
-        <div id="wrapper">
-
-            <div id="drop-area">
-                <h3 class="drop-text">Drag and Drop Images Here</h3>
-                <input type="file" name="image">
-                <input type="submit" name="submit" value="submit"><br><br>
-            </div>
-
 
 
     </form>
