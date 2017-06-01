@@ -4,7 +4,7 @@
 if (isset($_POST['email']))  {
 
     //Email information
-    $admin_email = "99033673@mydavinci.nl";
+    $admin_email = "justin555@live.nl";
     $email = $_POST['email'];
     $subject = 'comment on the website';
     $name = $_POST['name'];
