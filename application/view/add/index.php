@@ -24,7 +24,8 @@
                 <?php } ?>
                 </tbody>
             </table>
-            <a class="tablelink" href="<?php echo URL; ?>admin/Adduser"> Create Users </a>
+            <br>
+            <a class="tablelink" href="<?php echo URL; ?>admin/Adduser"> Create an User </a>
         </div>
     </div>
 </main>

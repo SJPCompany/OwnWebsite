@@ -1,9 +1,9 @@
 <main>
     <div id="content-wrapper">
     <div class="main-text">
-        <h1> Welcome to the scansytem</h1>
+        <h1> Welcome to the scansytem<p class="calendar"><em><strong id="month"></strong></em><strong id="date"></strong></p></h1>
     </div>
-    <br>
+    <br><br>
     <table class="draggable" style="width:80%;">
         <tr class="draggable">
             <th class="draggable">Release</th>
@@ -26,7 +26,4 @@
             <td class="draggable">Add crud for the parttype</td>
         </tr>
     </table>
-        <div class="draggable">
-        <p class="calendar"><em><strong id="month"></strong></em><strong id="date"></strong></p>
-        </div>
 </main>
