@@ -60,3 +60,10 @@ define('DB_NAME', 'sjp');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_CHARSET', 'utf8');
+
+//define('DB_TYPE', 'mysql');
+//define('DB_HOST', '???');
+//define('DB_NAME', 'u760972364_test');
+//define('DB_USER', 'u760972364_test');
+//define('DB_PASS', 'justin');
+//define('DB_CHARSET', 'utf8');
