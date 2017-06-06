@@ -1,6 +1,6 @@
 <div class="container">
 
-    <h1>Profiel</h1>
+    <h1>Klanten Profiel</h1>
     <label>email</label><br>
     <label><?php ?></label>
     <label>voornaam</label><br>
@@ -16,17 +16,16 @@
     <label>plaats</label><br>
     <label><?php ?></label>
     <br>
+    <a href="<?php echo URL; ?>user/edit"> edit info </a>
     <table>
 
         <thead>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
+            <th>onderdeel</th>
+            <th>prijs</th>
+            <th>datum</th>
         </thead>
         <tbody>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
+
         </tbody>
 
     </table>

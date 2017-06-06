@@ -22,14 +22,26 @@ class UserController
         }
     }
 
+    private $id;
+
+    // Function to get the id out of the url
+    public function getID()
+    {
+        if (isset($_GET['id'])) {
+            $this->id = $_GET['id'];
+            return $this->id;
+
+        }
+    }
+// render index pagina
     public function index()
     {
         // load views
         $this->CheckUSER();
 
-        $userinfo = new Userform();
-        // getting all songs and amount of songs
-        //$userinfos = $userinfo->getuserinfo();
+       $userinfo = new Userform();
+       $id = $this->getID();
+       $users = $userinfo->getuserinfo($id);
 
 
         require APP . 'view/_templates/header.php';
@@ -38,19 +50,17 @@ class UserController
         require APP . 'view/_templates/footer.php';
 
     }
+// render edit pagina
+public function edit(){
+    $this->CheckUSER();
 
-    public function userprofile(){
+    $userinfo = new Userform();
 
-        $sql = "SELECT * FROM  account WHERE id = , artist, track, link FROM song";
-        $query = $this->db->prepare($sql);
-        $query->execute();
+    require APP . 'view/_templates/header.php';
+    require APP . 'view/user/edit.php';
+    require APP . 'view/_templates/side_menu.php';
+    require APP . 'view/_templates/footer.php';
 
-        // fetchAll() is the PDO method that gets all result rows, here in object-style because we defined this in
-        // core/controller.php! If you prefer to get an associative array as the result, then do
-        // $query->fetchAll(PDO::FETCH_ASSOC); or change core/controller.php's PDO options to
-        // $options = array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC ...
-        return $query->fetchAll();
-
-    }
+}
 
 }
