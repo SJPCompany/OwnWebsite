@@ -38,9 +38,8 @@ class UserController
     {
         // load views
         $this->CheckUSER();
-
        $userinfo = new Userform();
-       $id = $this->getID();
+       $id = $_SESSION['id'];
        $users = $userinfo->getuserinfo($id);
 
 
@@ -53,14 +52,25 @@ class UserController
 // render edit pagina
 public function edit(){
     $this->CheckUSER();
-
     $userinfo = new Userform();
+    $id = $_SESSION['id'];
+    $users = $userinfo->getuserinfo($id);
+
+
 
     require APP . 'view/_templates/header.php';
     require APP . 'view/user/edit.php';
     require APP . 'view/_templates/side_menu.php';
     require APP . 'view/_templates/footer.php';
 
-}
+    }
 
+
+    public function saveupdate(){
+        $userinfo = new Userform();
+        if (isset($_POST["submit"])) {
+
+        }
+            $userinfo->updateuser($_POST["id"],$_POST["email"],$_POST["firstname"],$_POST["lastname"],$_POST["streetname"],$_POST["housenumber"],$_POST["zip"],$_POST["city"]);
+    }
 }

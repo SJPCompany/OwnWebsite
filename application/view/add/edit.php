@@ -15,7 +15,7 @@
             </select><br><br>
             <label>email:</label> <br>
             <input type="email" name="email" value="<?= $user->email ?>"> <br><br>
-            <input type="submit" name="submit" value="change user"><br><br>
+            <input type="submit" name="submit" value="update"><br><br>
         <?php } ?>
     </form>
 </div>

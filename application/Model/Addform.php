@@ -70,7 +70,4 @@ class Addform extends Model
         }
         return $message;
     }
-
-
-
 }

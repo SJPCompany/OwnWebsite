@@ -52,15 +52,19 @@ class Account extends Model
             if($role->role == 'admin') {
                 $_SESSION['admin'] = true;
                 $_SESSION['username'] = $role->username;
+                $_SESSION['id'] = $role->id;
             } elseif ($role->role == 'owner') {
                 $_SESSION['owner'] = true;
                 $_SESSION['username'] = $role->username;
+                $_SESSION['id'] = $role->id;
             } elseif ($role->role == 'member') {
                 $_SESSION['member'] = true;
                 $_SESSION['username'] = $role->username;
+                $_SESSION['id'] = $role->id;
             } else {
                 $_SESSION['student'] = true;
                 $_SESSION['username'] = $role->username;
+                $_SESSION['id'] = $role->id;
             }
         }
         // Redirect to the startpage
