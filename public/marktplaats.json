@@ -1,0 +1,18 @@
+"Host":  "api.marktplaats.nl"
+
+{
+"query": "phone",
+"categoryId": 2,
+"sellerId": 4,
+"filters": {
+"price": {
+"from": 10,
+"to": 20
+},
+"postCode": "1000AB",
+"distance": 1000,
+"condition": [ "Nieuw" ],
+"color": [ "Rood", "Blauw" ],
+"searchOnDescription": true
+}
+}
