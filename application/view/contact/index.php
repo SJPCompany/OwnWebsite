@@ -4,17 +4,17 @@
 
     <form method="post" action="<?php echo URL; ?>contact/sendMail"">
 
-        * Name: <input type="text" name="name">
+    <em style="color: red;">*</em> Name: <input type="text" name="name">
         <span class="error"></span>
 
         <br><br>
 
-        * E-mail: <input type="text" name="email">
+    <em style="color: red;">*</em> E-mail: <input type="text" name="email">
         <span class="error"></span>
 
         <br><br>
 
-        * Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+    <em style="color: red;">*</em> Comment: <textarea name="comment" rows="5" cols="40"></textarea>
         <span class="error"></span>
 
         <br><br>

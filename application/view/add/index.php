@@ -25,7 +25,7 @@
                 </tbody>
             </table>
             <br>
-            <a class="tablelink" href="<?php echo URL; ?>admin/Adduser"> Create an User </a>
+            <a style="max-width: 10%;" class="tablelink" href="<?php echo URL; ?>admin/Adduser"> Create an User </a>
         </div>
     </div>
 </main>
