@@ -71,6 +71,6 @@ public function edit(){
         if (isset($_POST["submit"])) {
 
         }
-            $userinfo->updateuser($_POST["id"],$_POST["email"],$_POST["firstname"],$_POST["lastname"],$_POST["streetname"],$_POST["housenumber"],$_POST["zip"],$_POST["city"]);
+        $userinfo->updateuser($_POST["id"],$_POST["email"],$_POST["firstname"],$_POST["lastname"],$_POST["streetname"],$_POST["housenumber"],$_POST["zip"],$_POST["city"]);
     }
 }

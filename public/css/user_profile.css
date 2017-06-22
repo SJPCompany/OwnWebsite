@@ -31,3 +31,11 @@
 .toppad
 {margin-top:20px;
 }
+
+.panel-heading {
+    background-color: #808080 !important;
+}
+
+.panel-title {
+    color: white !important;
+}

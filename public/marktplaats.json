@@ -1,0 +1,19 @@
+GET /v1/search?categoryId=92&query=car&offset=0&limit=10 HTTP/1.1
+Host: api.marktplaats.nl
+
+{
+"query": "phone",
+"categoryId": 2,
+"sellerId": 4,
+"filters": {
+"price": {
+"from": 10,
+"to": 20
+},
+"postCode": "1000AB",
+"distance": 1000,
+"condition": [ "Nieuw" ],
+"color": [ "Rood", "Blauw" ],
+"searchOnDescription": true
+}
+}

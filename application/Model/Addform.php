@@ -16,9 +16,8 @@ class Addform extends Model
 
     public function addpart($parttype, $partserie, $other, $manufacturer, $barcode ,$fru , $country , $price ,$year , $amount ,$location )
     {
-        $RandomAccountNumber = uniqid();
         $target_dir = "upload/";
-        $target_file = $target_dir . basename($_FILES["image"] .$_FILES{uniqid()});
+        $target_file = $target_dir . basename($_FILES["image"] ["name"]);
         $uploadOk = 1;
         $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image

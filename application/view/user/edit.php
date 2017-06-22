@@ -6,37 +6,38 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    <h3 class="panel-title">User Profile</h3>
+                    <h3 class="panel-title">User Profile: <?php echo $_SESSION['username']?></h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
                         <div class=" col-md-10 col-lg-10 ">
                             <table class="table table-user-information">
                                 <tbody>
-                                <form method="post" action="<?php echo URL; ?>user/saveupdate">
+                                <form method="post" id="" action="<?php echo URL; ?>user/saveupdate">
                                     <?php foreach ($users as $user) {?>
                                         <input type="hidden" name="id" value="<?= $user->id ?>">
                                     <tr>
                                         <td>Voornaam:</td>
-                                        <td><input value="<?= $user->firstname ;?>"></td>
+                                        <td><input  name="firstname" value="<?= $user->firstname ;?>"></td>
                                     </tr>
                                     <tr>
                                         <td>Achternaam:</td>
-                                        <td><input value="<?= $user->lastname ;?>"></td>
+                                        <td><input name="lastname" value="<?= $user->lastname ;?>"></td>
                                     </tr>
                                     <tr>
                                         <td>Straatnaam en huisnummer:</td>
-                                        <td><input value="<?= $user->streetname; ?>">&nbsp;<input value="<?= $user->housenumber; ?>"></td>
+                                        <td><input  name="streetname" value="<?= $user->streetname; ?>">&nbsp;<input  name="housenumber" value="<?= $user->housenumber; ?>"></td>
                                     </tr>
                                     <tr>
                                         <td>Postcode en woonplaats:</td>
-                                        <td><input value="<?= $user->zip; ?>">&nbsp;<input value="<?= $user->city; ?>"></td>
+                                        <td><input name="zip" value="<?= $user->zip; ?>">&nbsp;<input  name="city" value="<?= $user->city; ?>"></td>
                                     </tr>
                                     <tr>
                                         <td>Email:</td>
-                                        <td><input value="<?= $user->email; ?>"></td>
+                                        <td><input name="email" value="<?= $user->email; ?>"></td>
                                     </tr>
                                     <?php } ?>
+                                    <button class="userbutton" type="submit" name="submit" value="update">test</button>
                                 </form>
 
 
