@@ -43,7 +43,7 @@ class UserController
        $users = $userinfo->getuserinfo($id);
 
 
-        require APP . 'view/_templates/header.php';
+        require APP . 'view/_templates/user_header.php';
         require APP . 'view/user/index.php';
         require APP . 'view/_templates/side_menu.php';
         require APP . 'view/_templates/footer.php';
@@ -58,7 +58,7 @@ public function edit(){
 
 
 
-    require APP . 'view/_templates/header.php';
+    require APP . 'view/_templates/user_header.php';
     require APP . 'view/user/edit.php';
     require APP . 'view/_templates/side_menu.php';
     require APP . 'view/_templates/footer.php';

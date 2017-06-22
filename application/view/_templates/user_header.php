@@ -18,7 +18,7 @@
     <script src="<?php echo URL; ?>public/js/jquery.js"></script>
 
     <!-- CSS -->
-    <link href="<?php echo URL; ?>css/style.css" rel="stylesheet">
+    <link href="<?php echo URL; ?>css/user_profile.css" rel="stylesheet">
     <link href="<?php echo URL; ?>css/table.css" rel="stylesheet">
     <link href="<?php echo URL; ?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo URL; ?>css/navigation-menu.css" rel="stylesheet">
