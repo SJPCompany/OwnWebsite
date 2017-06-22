@@ -1,4 +1,5 @@
-"Host":  "api.marktplaats.nl"
+GET /v1/search?categoryId=92&query=car&offset=0&limit=10 HTTP/1.1
+Host: api.marktplaats.nl
 
 {
 "query": "phone",

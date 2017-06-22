@@ -8,9 +8,10 @@ class pricechecker
 {
 public function partsearch($part){
 
-    $myObj->query = $part;
-    $myJSON = json_encode($myObj);
-    echo $myJSON;
+    $myJSON = json_encode($part);
+
+
+
 }
 
 
