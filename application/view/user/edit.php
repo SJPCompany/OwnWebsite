@@ -1,13 +1,4 @@
-<?php foreach ($users as $user) {?>
-    <h1>Klanten Profiel</h1>
-    <ul>
-        <li><label>Postcode:</label><br><label class="notbold"><?php echo $user->zip;?></label><br></li>
-        <li><label>Plaats:</label><br><label class="notbold"><?php echo $user->city;?></label><br></li>
-    </ul>
-    <a href="<?php echo URL; ?>user/edit/?id=<?php echo $user->id; ?>">edit info</a>
-<?php } ?>
-
-<div class="container">
+<br><br><div class="container">
     <div class="row">
         <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
             <A href="edit.html" >Edit Profile info</A>
@@ -19,7 +10,7 @@
                 </div>
                 <div class="panel-body">
                     <div class="row">
-                        <div class=" col-md-9 col-lg-9 ">
+                        <div class=" col-md-10 col-lg-10 ">
                             <table class="table table-user-information">
                                 <tbody>
                                 <form method="post" action="<?php echo URL; ?>user/saveupdate">
@@ -55,12 +46,12 @@
                     </div>
                 </div>
                 <div class="panel-footer">
-                     <span class="pull-right">
-                            <a data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-edit"></i></a>
-                            <a data-original-title="Discard" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                    <a data-original-title="Save this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-edit"></i></a>
+                    <span class="pull-right">
+                            <a href="<?php echo URL; ?>user/index" data-original-title="Discard" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
                         </span>
                 </div>
             </div>
         </div>
     </div>
-</div><input type="submit" name="submit" value="update">s
+</div>

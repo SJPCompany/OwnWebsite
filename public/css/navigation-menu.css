@@ -106,9 +106,6 @@ main .helper {
 .menu ul li.icon-contact {
     background-image: url("../icon/contact.png");
 }
-.menu ul li.icon-shoppingbasket {
-    background-image: url("../icon/shoppingbasket.png");
-}
 .menu ul li.icon-logout {
     background-image: url("../icon/logout.png");
 }
