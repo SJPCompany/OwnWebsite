@@ -3,7 +3,7 @@
     <form method="post" action="<?php echo URL; ?>part/PostCheck">
         <form>
                 <label for="sel1">Select part (select one):</label>
-                <select class="form-control" id="sel1">
+                <select name="type" class="form-control" id="sel1">
                     <option value="ram">RAM</option>
                     <option value="processor">Processor</option>
                     <option value="fan">Fan</option>
