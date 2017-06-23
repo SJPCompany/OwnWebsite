@@ -34,7 +34,7 @@
                                     </tr>
                                     <tr>
                                         <td>Email:</td>
-                                        <td><input name="email" value="<?= $user->email; ?>"></td>
+                                        <td><input type='email' name="email" value="<?= $user->email; ?>"></td>
                                     </tr>
                                     <?php } ?>
                                     <button class="userbutton" type="submit" name="submit" value="update">test</button>

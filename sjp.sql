@@ -11,11 +11,6 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-
--- Databasestructuur van sjp wordt geschreven
-CREATE DATABASE IF NOT EXISTS `sjp` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `sjp`;
-
 -- Structuur van  tabel sjp.account wordt geschreven
 CREATE TABLE IF NOT EXISTS `account` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
